@@ -73,7 +73,7 @@ public class CmdIndice implements CommandExecutor {
 
             // add web redirect
             link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL,
-                    "http://xmas.onecraft.fr/" + day + ".php?uuid=" + player.getUniqueId().toString()
+                    "http://xmas.onecraft.fr/" + (day < 10 ? "0" + day : day) + ".php?uuid=" + player.getUniqueId().toString()
             ));
         }
 
