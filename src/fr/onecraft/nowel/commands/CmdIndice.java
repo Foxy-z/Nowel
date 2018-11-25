@@ -25,7 +25,7 @@ public class CmdIndice implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        TextComponent link = new TextComponent("ici");
+        TextComponent link = new TextComponent("Clique ici");
         link.setColor(ChatColor.GREEN);
         link.setBold(true);
         link.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(
@@ -77,7 +77,7 @@ public class CmdIndice implements CommandExecutor {
             ));
         }
 
-        TextComponent message = new TextComponent(Nowel.PREFIX + "Clique ");
+        TextComponent message = new TextComponent(Nowel.PREFIX);
         message.setColor(ChatColor.GRAY);
         message.addExtra(link);
         message.addExtra(" pour obtenir l'indice !");
