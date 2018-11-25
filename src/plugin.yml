@@ -1,0 +1,7 @@
+name: Nowel
+author: TheFoxy41
+version: 0.0.1
+main: fr.onecraft.nowel.Nowel
+commands:
+ indice:
+  aliases: [indices]
