@@ -14,6 +14,7 @@ public class Nowel extends JavaPlugin {
         // register command
         PluginCommand command = this.getCommand("indice");
         command.setExecutor(new CmdIndice());
+
         Bukkit.getConsoleSender().sendMessage("[" + getName() + "] Nowel has been enabled.");
     }
 

@@ -25,6 +25,7 @@ public class CmdIndice implements CommandExecutor {
 
         Player player = (Player) sender;
 
+        // add link
         TextComponent link = new TextComponent("Clique ici");
         link.setColor(ChatColor.GREEN);
         link.setBold(true);
@@ -32,6 +33,7 @@ public class CmdIndice implements CommandExecutor {
                 "§7Clique ici pour obtenir l'indice !"
         ).create()));
 
+        // get current day
         String currentDayStr = new SimpleDateFormat("dd").format(System.currentTimeMillis());
 
         if (args.length == 0) {
@@ -44,6 +46,7 @@ public class CmdIndice implements CommandExecutor {
         } else {
             int day;
             int currentDay;
+
             // parse string to int or else send error
             try {
                 day = Integer.parseInt(args[0]);
@@ -77,8 +80,11 @@ public class CmdIndice implements CommandExecutor {
             ));
         }
 
+        // add prefix
         TextComponent message = new TextComponent(Nowel.PREFIX);
         message.setColor(ChatColor.GRAY);
+
+        // add the clickable link and the end of the msg
         message.addExtra(link);
         message.addExtra(" pour obtenir l'indice !");
 
